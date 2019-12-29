@@ -1,0 +1,1743 @@
+[
+  {
+    "name": "player_death",
+    "params": [
+      "userid",
+      "attacker",
+      "assister",
+      "weapon",
+      "weapon_itemid",
+      "weapon_fauxitemid",
+      "weapon_originalowner_xuid",
+      "headshot",
+      "dominated",
+      "revenge",
+      "penetrated",
+      "noreplay"
+    ]
+  },
+  {
+    "name": "other_death",
+    "params": [
+      "otherid",
+      "othertype",
+      "attacker",
+      "weapon",
+      "weapon_itemid",
+      "weapon_fauxitemid",
+      "weapon_originalowner_xuid",
+      "headshot",
+      "penetrated"
+    ]
+  },
+  {
+    "name": "player_hurt",
+    "params": [
+      "userid",
+      "attacker",
+      "health",
+      "armor",
+      "weapon",
+      "dmg_health",
+      "dmg_armor",
+      "hitgroup"
+    ]
+  },
+  {
+    "name": "item_purchase",
+    "params": [
+      "userid",
+      "team",
+      "weapon"
+    ]
+  },
+  {
+    "name": "bomb_beginplant",
+    "params": [
+      "userid",
+      "site"
+    ]
+  },
+  {
+    "name": "bomb_abortplant",
+    "params": [
+      "userid",
+      "site"
+    ]
+  },
+  {
+    "name": "bomb_planted",
+    "params": [
+      "userid",
+      "site"
+    ]
+  },
+  {
+    "name": "bomb_defused",
+    "params": [
+      "userid",
+      "site"
+    ]
+  },
+  {
+    "name": "bomb_exploded",
+    "params": [
+      "userid",
+      "site"
+    ]
+  },
+  {
+    "name": "bomb_dropped",
+    "params": [
+      "userid",
+      "entindex"
+    ]
+  },
+  {
+    "name": "bomb_pickup",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "defuser_dropped",
+    "params": [
+      "entityid"
+    ]
+  },
+  {
+    "name": "defuser_pickup",
+    "params": [
+      "entityid",
+      "userid"
+    ]
+  },
+  {
+    "name": "announce_phase_end",
+    "params": []
+  },
+  {
+    "name": "cs_intermission",
+    "params": []
+  },
+  {
+    "name": "bomb_begindefuse",
+    "params": [
+      "userid",
+      "haskit"
+    ]
+  },
+  {
+    "name": "bomb_abortdefuse",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "hostage_follows",
+    "params": [
+      "userid",
+      "hostage"
+    ]
+  },
+  {
+    "name": "hostage_hurt",
+    "params": [
+      "userid",
+      "hostage"
+    ]
+  },
+  {
+    "name": "hostage_killed",
+    "params": [
+      "userid",
+      "hostage"
+    ]
+  },
+  {
+    "name": "hostage_rescued",
+    "params": [
+      "userid",
+      "hostage",
+      "site"
+    ]
+  },
+  {
+    "name": "hostage_stops_following",
+    "params": [
+      "userid",
+      "hostage"
+    ]
+  },
+  {
+    "name": "hostage_rescued_all",
+    "params": []
+  },
+  {
+    "name": "hostage_call_for_help",
+    "params": [
+      "hostage"
+    ]
+  },
+  {
+    "name": "vip_escaped",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "vip_killed",
+    "params": [
+      "userid",
+      "attacker"
+    ]
+  },
+  {
+    "name": "player_radio",
+    "params": [
+      "userid",
+      "slot"
+    ]
+  },
+  {
+    "name": "bomb_beep",
+    "params": [
+      "entindex"
+    ]
+  },
+  {
+    "name": "weapon_fire",
+    "params": [
+      "userid",
+      "weapon",
+      "silenced"
+    ]
+  },
+  {
+    "name": "weapon_fire_on_empty",
+    "params": [
+      "userid",
+      "weapon"
+    ]
+  },
+  {
+    "name": "weapon_outofammo",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "weapon_reload",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "weapon_zoom",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "silencer_detach",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "inspect_weapon",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "weapon_zoom_rifle",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "player_spawned",
+    "params": [
+      "userid",
+      "inrestart"
+    ]
+  },
+  {
+    "name": "item_pickup",
+    "params": [
+      "userid",
+      "item",
+      "silent"
+    ]
+  },
+  {
+    "name": "ammo_pickup",
+    "params": [
+      "userid",
+      "item",
+      "index"
+    ]
+  },
+  {
+    "name": "item_equip",
+    "params": [
+      "userid",
+      "item",
+      "canzoom",
+      "hassilencer",
+      "issilenced",
+      "hastracers",
+      "weptype",
+      "ispainted"
+    ]
+  },
+  {
+    "name": "enter_buyzone",
+    "params": [
+      "userid",
+      "canbuy"
+    ]
+  },
+  {
+    "name": "exit_buyzone",
+    "params": [
+      "userid",
+      "canbuy"
+    ]
+  },
+  {
+    "name": "buytime_ended",
+    "params": []
+  },
+  {
+    "name": "enter_bombzone",
+    "params": [
+      "userid",
+      "hasbomb",
+      "isplanted"
+    ]
+  },
+  {
+    "name": "exit_bombzone",
+    "params": [
+      "userid",
+      "hasbomb",
+      "isplanted"
+    ]
+  },
+  {
+    "name": "enter_rescue_zone",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "exit_rescue_zone",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "silencer_off",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "silencer_on",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "buymenu_open",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "buymenu_close",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "round_prestart",
+    "params": []
+  },
+  {
+    "name": "round_poststart",
+    "params": []
+  },
+  {
+    "name": "round_start",
+    "params": [
+      "timelimit",
+      "fraglimit",
+      "objective"
+    ]
+  },
+  {
+    "name": "round_end",
+    "params": [
+      "winner",
+      "reason",
+      "message",
+      "legacy",
+      "player_count"
+    ]
+  },
+  {
+    "name": "grenade_bounce",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "hegrenade_detonate",
+    "params": [
+      "userid",
+      "entityid",
+      "vector"
+    ]
+  },
+  {
+    "name": "flashbang_detonate",
+    "params": [
+      "userid",
+      "entityid",
+      "vector"
+    ]
+  },
+  {
+    "name": "smokegrenade_detonate",
+    "params": [
+      "userid",
+      "entityid",
+      "vector"
+    ]
+  },
+  {
+    "name": "smokegrenade_expired",
+    "params": [
+      "userid",
+      "entityid",
+      "vector"
+    ]
+  },
+  {
+    "name": "molotov_detonate",
+    "params": [
+      "userid",
+      "vector"
+    ]
+  },
+  {
+    "name": "decoy_detonate",
+    "params": [
+      "userid",
+      "entityid",
+      "vector"
+    ]
+  },
+  {
+    "name": "decoy_started",
+    "params": [
+      "userid",
+      "entityid",
+      "vector"
+    ]
+  },
+  {
+    "name": "tagrenade_detonate",
+    "params": [
+      "userid",
+      "entityid",
+      "vector"
+    ]
+  },
+  {
+    "name": "inferno_startburn",
+    "params": [
+      "entityid",
+      "vector"
+    ]
+  },
+  {
+    "name": "inferno_expire",
+    "params": [
+      "entityid",
+      "vector"
+    ]
+  },
+  {
+    "name": "inferno_extinguish",
+    "params": [
+      "entityid",
+      "vector"
+    ]
+  },
+  {
+    "name": "decoy_firing",
+    "params": [
+      "userid",
+      "entityid",
+      "vector"
+    ]
+  },
+  {
+    "name": "bullet_impact",
+    "params": [
+      "userid",
+      "vector"
+    ]
+  },
+  {
+    "name": "player_footstep",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "player_jump",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "player_blind",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "player_falldamage",
+    "params": [
+      "userid",
+      "damage"
+    ]
+  },
+  {
+    "name": "door_moving",
+    "params": [
+      "entindex",
+      "userid"
+    ]
+  },
+  {
+    "name": "round_freeze_end",
+    "params": []
+  },
+  {
+    "name": "mb_input_lock_success",
+    "params": []
+  },
+  {
+    "name": "mb_input_lock_cancel",
+    "params": []
+  },
+  {
+    "name": "nav_blocked",
+    "params": [
+      "area",
+      "blocked"
+    ]
+  },
+  {
+    "name": "nav_generate",
+    "params": []
+  },
+  {
+    "name": "player_stats_updated",
+    "params": [
+      "forceupload"
+    ]
+  },
+  {
+    "name": "achievement_info_loaded",
+    "params": []
+  },
+  {
+    "name": "spec_target_updated",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "spec_mode_updated",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "hltv_changed_mode",
+    "params": [
+      "oldmode",
+      "newmode",
+      "obs_target"
+    ]
+  },
+  {
+    "name": "cs_game_disconnected",
+    "params": []
+  },
+  {
+    "name": "cs_win_panel_round",
+    "params": [
+      "show_timer_defend",
+      "show_timer_attack",
+      "timer_time",
+      "final_event",
+      "funfact_token",
+      "funfact_player",
+      "funfact_data1",
+      "funfact_data2",
+      "funfact_data3"
+    ]
+  },
+  {
+    "name": "cs_win_panel_match",
+    "params": []
+  },
+  {
+    "name": "cs_match_end_restart",
+    "params": []
+  },
+  {
+    "name": "cs_pre_restart",
+    "params": []
+  },
+  {
+    "name": "show_freezepanel",
+    "params": [
+      "victim",
+      "killer",
+      "hits_taken",
+      "damage_taken",
+      "hits_given",
+      "damage_given"
+    ]
+  },
+  {
+    "name": "hide_freezepanel",
+    "params": []
+  },
+  {
+    "name": "freezecam_started",
+    "params": []
+  },
+  {
+    "name": "player_avenged_teammate",
+    "params": [
+      "avenger_id",
+      "avenged_player_id"
+    ]
+  },
+  {
+    "name": "achievement_earned",
+    "params": [
+      "player",
+      "achievement"
+    ]
+  },
+  {
+    "name": "achievement_earned_local",
+    "params": [
+      "achievement",
+      "splitscreenplayer"
+    ]
+  },
+  {
+    "name": "item_found",
+    "params": [
+      "player",
+      "quality",
+      "method",
+      "itemdef",
+      "itemid"
+    ]
+  },
+  {
+    "name": "items_gifted",
+    "params": [
+      "player",
+      "itemdef",
+      "numgifts",
+      "giftidx",
+      "accountid"
+    ]
+  },
+  {
+    "name": "repost_xbox_achievements",
+    "params": [
+      "splitscreenplayer"
+    ]
+  },
+  {
+    "name": "match_end_conditions",
+    "params": [
+      "frags",
+      "max_rounds",
+      "win_rounds",
+      "time"
+    ]
+  },
+  {
+    "name": "round_mvp",
+    "params": [
+      "userid",
+      "reason",
+      "musickitmvps"
+    ]
+  },
+  {
+    "name": "player_decal",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "teamplay_round_start",
+    "params": [
+      "full_reset"
+    ]
+  },
+  {
+    "name": "client_disconnect",
+    "params": []
+  },
+  {
+    "name": "gg_player_levelup",
+    "params": [
+      "userid",
+      "weaponrank",
+      "weaponname"
+    ]
+  },
+  {
+    "name": "ggtr_player_levelup",
+    "params": [
+      "userid",
+      "weaponrank",
+      "weaponname"
+    ]
+  },
+  {
+    "name": "assassination_target_killed",
+    "params": [
+      "target",
+      "killer"
+    ]
+  },
+  {
+    "name": "ggprogressive_player_levelup",
+    "params": [
+      "userid",
+      "weaponrank",
+      "weaponname"
+    ]
+  },
+  {
+    "name": "gg_killed_enemy",
+    "params": [
+      "victimid",
+      "attackerid",
+      "dominated",
+      "revenge",
+      "bonus"
+    ]
+  },
+  {
+    "name": "gg_final_weapon_achieved",
+    "params": [
+      "playerid"
+    ]
+  },
+  {
+    "name": "gg_bonus_grenade_achieved",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "switch_team",
+    "params": [
+      "numplayers",
+      "numspectators",
+      "avg_rank",
+      "numtslotsfree",
+      "numctslotsfree"
+    ]
+  },
+  {
+    "name": "gg_leader",
+    "params": [
+      "playerid"
+    ]
+  },
+  {
+    "name": "gg_team_leader",
+    "params": [
+      "playerid"
+    ]
+  },
+  {
+    "name": "gg_player_impending_upgrade",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "write_profile_data",
+    "params": []
+  },
+  {
+    "name": "trial_time_expired",
+    "params": [
+      "slot"
+    ]
+  },
+  {
+    "name": "update_matchmaking_stats",
+    "params": []
+  },
+  {
+    "name": "player_reset_vote",
+    "params": [
+      "userid",
+      "vote"
+    ]
+  },
+  {
+    "name": "enable_restart_voting",
+    "params": [
+      "enable"
+    ]
+  },
+  {
+    "name": "sfuievent",
+    "params": [
+      "action",
+      "data",
+      "slot"
+    ]
+  },
+  {
+    "name": "start_vote",
+    "params": [
+      "userid",
+      "type",
+      "vote_parameter"
+    ]
+  },
+  {
+    "name": "player_given_c4",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "gg_reset_round_start_sounds",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "tr_player_flashbanged",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "tr_mark_complete",
+    "params": [
+      "complete"
+    ]
+  },
+  {
+    "name": "tr_mark_best_time",
+    "params": [
+      "time"
+    ]
+  },
+  {
+    "name": "tr_exit_hint_trigger",
+    "params": []
+  },
+  {
+    "name": "bot_takeover",
+    "params": [
+      "userid",
+      "botid",
+      "index"
+    ]
+  },
+  {
+    "name": "tr_show_finish_msgbox",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "tr_show_exit_msgbox",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "reset_player_controls",
+    "params": []
+  },
+  {
+    "name": "jointeam_failed",
+    "params": [
+      "userid",
+      "reason"
+    ]
+  },
+  {
+    "name": "teamchange_pending",
+    "params": [
+      "userid",
+      "toteam"
+    ]
+  },
+  {
+    "name": "material_default_complete",
+    "params": []
+  },
+  {
+    "name": "cs_prev_next_spectator",
+    "params": [
+      "next"
+    ]
+  },
+  {
+    "name": "cs_handle_ime_event",
+    "params": [
+      "local",
+      "eventtype",
+      "eventdata"
+    ]
+  },
+  {
+    "name": "nextlevel_changed",
+    "params": [
+      "nextlevel"
+    ]
+  },
+  {
+    "name": "seasoncoin_levelup",
+    "params": [
+      "player",
+      "category",
+      "rank"
+    ]
+  },
+  {
+    "name": "tournament_reward",
+    "params": [
+      "defindex",
+      "totalrewards",
+      "accountid"
+    ]
+  },
+  {
+    "name": "start_halftime",
+    "params": []
+  },
+  {
+    "name": "hltv_status",
+    "params": [
+      "clients",
+      "slots",
+      "proxies",
+      "master",
+      "externaltotal",
+      "externallinked"
+    ]
+  },
+  {
+    "name": "hltv_cameraman",
+    "params": [
+      "index"
+    ]
+  },
+  {
+    "name": "hltv_rank_camera",
+    "params": [
+      "index",
+      "rank",
+      "target"
+    ]
+  },
+  {
+    "name": "hltv_rank_entity",
+    "params": [
+      "index",
+      "rank",
+      "target"
+    ]
+  },
+  {
+    "name": "hltv_fixed",
+    "params": [
+      "posx",
+      "posy",
+      "posz",
+      "theta",
+      "phi",
+      "offset",
+      "fov",
+      "target"
+    ]
+  },
+  {
+    "name": "hltv_chase",
+    "params": [
+      "target1",
+      "target2",
+      "distance",
+      "theta",
+      "phi",
+      "inertia",
+      "ineye"
+    ]
+  },
+  {
+    "name": "hltv_message",
+    "params": [
+      "text"
+    ]
+  },
+  {
+    "name": "hltv_title",
+    "params": [
+      "text"
+    ]
+  },
+  {
+    "name": "hltv_chat",
+    "params": [
+      "text"
+    ]
+  },
+  {
+    "name": "hltv_changed_target",
+    "params": [
+      "mode",
+      "old_target",
+      "obs_target"
+    ]
+  },
+  {
+    "name": "team_info",
+    "params": [
+      "teamid",
+      "teamname"
+    ]
+  },
+  {
+    "name": "team_score",
+    "params": [
+      "teamid",
+      "score"
+    ]
+  },
+  {
+    "name": "teamplay_broadcast_audio",
+    "params": [
+      "team",
+      "sound"
+    ]
+  },
+  {
+    "name": "gameui_hidden",
+    "params": []
+  },
+  {
+    "name": "items_gifted",
+    "params": [
+      "player",
+      "itemdef",
+      "numgifts",
+      "giftidx",
+      "accountid"
+    ]
+  },
+  {
+    "name": "player_team",
+    "params": [
+      "userid",
+      "team",
+      "oldteam",
+      "disconnect",
+      "autoteam",
+      "silent",
+      "isbot"
+    ]
+  },
+  {
+    "name": "player_class",
+    "params": [
+      "userid",
+      "class"
+    ]
+  },
+  {
+    "name": "player_death",
+    "params": [
+      "userid",
+      "attacker"
+    ]
+  },
+  {
+    "name": "player_hurt",
+    "params": [
+      "userid",
+      "attacker",
+      "health"
+    ]
+  },
+  {
+    "name": "player_chat",
+    "params": [
+      "teamonly",
+      "userid",
+      "text"
+    ]
+  },
+  {
+    "name": "player_score",
+    "params": [
+      "userid",
+      "kills",
+      "deaths",
+      "score"
+    ]
+  },
+  {
+    "name": "player_spawn",
+    "params": [
+      "userid",
+      "teamnum"
+    ]
+  },
+  {
+    "name": "player_shoot",
+    "params": [
+      "userid",
+      "weapon",
+      "mode"
+    ]
+  },
+  {
+    "name": "player_use",
+    "params": [
+      "userid",
+      "entity"
+    ]
+  },
+  {
+    "name": "player_changename",
+    "params": [
+      "userid",
+      "oldname",
+      "newname"
+    ]
+  },
+  {
+    "name": "player_hintmessage",
+    "params": [
+      "hintmessage"
+    ]
+  },
+  {
+    "name": "game_init",
+    "params": []
+  },
+  {
+    "name": "game_newmap",
+    "params": [
+      "mapname"
+    ]
+  },
+  {
+    "name": "game_start",
+    "params": [
+      "roundslimit",
+      "timelimit",
+      "fraglimit",
+      "objective"
+    ]
+  },
+  {
+    "name": "game_end",
+    "params": [
+      "winner"
+    ]
+  },
+  {
+    "name": "round_start",
+    "params": [
+      "timelimit",
+      "fraglimit",
+      "objective"
+    ]
+  },
+  {
+    "name": "round_announce_match_point",
+    "params": []
+  },
+  {
+    "name": "round_announce_final",
+    "params": []
+  },
+  {
+    "name": "round_announce_last_round_half",
+    "params": []
+  },
+  {
+    "name": "round_announce_match_start",
+    "params": []
+  },
+  {
+    "name": "round_announce_warmup",
+    "params": []
+  },
+  {
+    "name": "round_end",
+    "params": [
+      "winner",
+      "reason",
+      "message",
+      "legacy"
+    ]
+  },
+  {
+    "name": "round_end_upload_stats",
+    "params": []
+  },
+  {
+    "name": "round_officially_ended",
+    "params": []
+  },
+  {
+    "name": "round_time_warning",
+    "params": []
+  },
+  {
+    "name": "ugc_map_info_received",
+    "params": [
+      "published_file_id"
+    ]
+  },
+  {
+    "name": "ugc_map_unsubscribed",
+    "params": [
+      "published_file_id"
+    ]
+  },
+  {
+    "name": "ugc_map_download_error",
+    "params": [
+      "published_file_id",
+      "error_code"
+    ]
+  },
+  {
+    "name": "ugc_file_download_finished",
+    "params": [
+      "hcontent"
+    ]
+  },
+  {
+    "name": "ugc_file_download_start",
+    "params": [
+      "hcontent",
+      "published_file_id"
+    ]
+  },
+  {
+    "name": "begin_new_match",
+    "params": []
+  },
+  {
+    "name": "round_start_pre_entity",
+    "params": []
+  },
+  {
+    "name": "teamplay_round_start",
+    "params": [
+      "full_reset"
+    ]
+  },
+  {
+    "name": "hostname_changed",
+    "params": [
+      "hostname"
+    ]
+  },
+  {
+    "name": "difficulty_changed",
+    "params": [
+      "newdifficulty",
+      "olddifficulty",
+      "strdifficulty"
+    ]
+  },
+  {
+    "name": "finale_start",
+    "params": [
+      "rushes"
+    ]
+  },
+  {
+    "name": "game_message",
+    "params": [
+      "target",
+      "text"
+    ]
+  },
+  {
+    "name": "dm_bonus_weapon_start",
+    "params": [
+      "time",
+      "wepid",
+      "pos"
+    ]
+  },
+  {
+    "name": "survival_announce_phase",
+    "params": [
+      "phase"
+    ]
+  },
+  {
+    "name": "break_breakable",
+    "params": [
+      "entindex",
+      "userid",
+      "material"
+    ]
+  },
+  {
+    "name": "break_prop",
+    "params": [
+      "entindex",
+      "userid"
+    ]
+  },
+  {
+    "name": "player_decal",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "entity_killed",
+    "params": [
+      "entindex_killed",
+      "entindex_attacker",
+      "entindex_inflictor",
+      "damagebits"
+    ]
+  },
+  {
+    "name": "bonus_updated",
+    "params": [
+      "numadvanced",
+      "numbronze",
+      "numsilver",
+      "numgold"
+    ]
+  },
+  {
+    "name": "player_stats_updated",
+    "params": [
+      "forceupload"
+    ]
+  },
+  {
+    "name": "achievement_event",
+    "params": [
+      "achievement_name",
+      "cur_val",
+      "max_val"
+    ]
+  },
+  {
+    "name": "achievement_increment",
+    "params": [
+      "achievement_id",
+      "cur_val",
+      "max_val"
+    ]
+  },
+  {
+    "name": "achievement_earned",
+    "params": [
+      "player",
+      "achievement"
+    ]
+  },
+  {
+    "name": "achievement_write_failed",
+    "params": []
+  },
+  {
+    "name": "physgun_pickup",
+    "params": [
+      "entindex"
+    ]
+  },
+  {
+    "name": "flare_ignite_npc",
+    "params": [
+      "entindex"
+    ]
+  },
+  {
+    "name": "helicopter_grenade_punt_miss",
+    "params": []
+  },
+  {
+    "name": "user_data_downloaded",
+    "params": []
+  },
+  {
+    "name": "ragdoll_dissolved",
+    "params": [
+      "entindex"
+    ]
+  },
+  {
+    "name": "gameinstructor_draw",
+    "params": []
+  },
+  {
+    "name": "gameinstructor_nodraw",
+    "params": []
+  },
+  {
+    "name": "map_transition",
+    "params": []
+  },
+  {
+    "name": "entity_visible",
+    "params": [
+      "userid",
+      "subject",
+      "classname",
+      "entityname"
+    ]
+  },
+  {
+    "name": "set_instructor_group_enabled",
+    "params": [
+      "group",
+      "enabled"
+    ]
+  },
+  {
+    "name": "instructor_server_hint_create",
+    "params": [
+      "hint_name",
+      "hint_replace_key",
+      "hint_target",
+      "hint_activator_userid",
+      "hint_timeout",
+      "hint_icon_onscreen",
+      "hint_icon_offscreen",
+      "hint_caption",
+      "hint_activator_caption",
+      "hint_color",
+      "hint_icon_offset",
+      "hint_range",
+      "hint_flags",
+      "hint_binding",
+      "hint_gamepad_binding",
+      "hint_allow_nodraw_target",
+      "hint_nooffscreen",
+      "hint_forcecaption",
+      "hint_local_player_only"
+    ]
+  },
+  {
+    "name": "instructor_server_hint_stop",
+    "params": [
+      "hint_name"
+    ]
+  },
+  {
+    "name": "read_game_titledata",
+    "params": [
+      "controllerid"
+    ]
+  },
+  {
+    "name": "write_game_titledata",
+    "params": [
+      "controllerid"
+    ]
+  },
+  {
+    "name": "reset_game_titledata",
+    "params": [
+      "controllerid"
+    ]
+  },
+  {
+    "name": "weapon_reload_database",
+    "params": []
+  },
+  {
+    "name": "vote_ended",
+    "params": []
+  },
+  {
+    "name": "vote_started",
+    "params": [
+      "issue",
+      "param1",
+      "team",
+      "initiator"
+    ]
+  },
+  {
+    "name": "vote_changed",
+    "params": [
+      "vote_option1",
+      "vote_option2",
+      "vote_option3",
+      "vote_option4",
+      "vote_option5",
+      "potentialvotes"
+    ]
+  },
+  {
+    "name": "vote_passed",
+    "params": [
+      "details",
+      "param1",
+      "team"
+    ]
+  },
+  {
+    "name": "vote_failed",
+    "params": [
+      "team"
+    ]
+  },
+  {
+    "name": "vote_cast",
+    "params": [
+      "vote_option",
+      "team",
+      "entityid"
+    ]
+  },
+  {
+    "name": "vote_options",
+    "params": [
+      "count",
+      "option1",
+      "option2",
+      "option3",
+      "option4",
+      "option5"
+    ]
+  },
+  {
+    "name": "endmatch_mapvote_selecting_map",
+    "params": [
+      "count",
+      "slot1",
+      "slot2",
+      "slot3",
+      "slot4",
+      "slot5",
+      "slot6",
+      "slot7",
+      "slot8",
+      "slot9",
+      "slot10"
+    ]
+  },
+  {
+    "name": "endmatch_cmm_start_reveal_items",
+    "params": []
+  },
+  {
+    "name": "inventory_updated",
+    "params": []
+  },
+  {
+    "name": "cart_updated",
+    "params": []
+  },
+  {
+    "name": "store_pricesheet_updated",
+    "params": []
+  },
+  {
+    "name": "gc_connected",
+    "params": []
+  },
+  {
+    "name": "item_schema_initialized",
+    "params": []
+  },
+  {
+    "name": "client_loadout_changed",
+    "params": []
+  },
+  {
+    "name": "add_player_sonar_icon",
+    "params": [
+      "userid",
+      "vector"
+    ]
+  },
+  {
+    "name": "add_bullet_hit_marker",
+    "params": [
+      "userid",
+      "bone",
+      "vector",
+      "vector",
+      "vector",
+      "hit"
+    ]
+  },
+  {
+    "name": "verify_client_hit",
+    "params": [
+      "userid",
+      "vector",
+      "timestamp"
+    ]
+  },
+  {
+    "name": "server_spawn",
+    "params": [
+      "hostname",
+      "address",
+      "port",
+      "game",
+      "mapname",
+      "maxplayers",
+      "os",
+      "dedicated",
+      "official",
+      "password"
+    ]
+  },
+  {
+    "name": "server_pre_shutdown",
+    "params": [
+      "reason"
+    ]
+  },
+  {
+    "name": "server_shutdown",
+    "params": [
+      "reason"
+    ]
+  },
+  {
+    "name": "server_cvar",
+    "params": [
+      "cvarname",
+      "cvarvalue"
+    ]
+  },
+  {
+    "name": "server_message",
+    "params": [
+      "text"
+    ]
+  },
+  {
+    "name": "server_addban",
+    "params": [
+      "name",
+      "userid",
+      "networkid",
+      "ip",
+      "duration",
+      "by",
+      "kicked"
+    ]
+  },
+  {
+    "name": "server_removeban",
+    "params": [
+      "networkid",
+      "ip",
+      "by"
+    ]
+  },
+  {
+    "name": "player_connect",
+    "params": [
+      "name",
+      "index",
+      "userid",
+      "networkid",
+      "address"
+    ]
+  },
+  {
+    "name": "player_info",
+    "params": [
+      "name",
+      "index",
+      "userid",
+      "networkid",
+      "bot"
+    ]
+  },
+  {
+    "name": "player_disconnect",
+    "params": [
+      "userid",
+      "reason",
+      "name",
+      "networkid"
+    ]
+  },
+  {
+    "name": "player_activate",
+    "params": [
+      "userid"
+    ]
+  },
+  {
+    "name": "player_connect_full",
+    "params": [
+      "userid",
+      "index"
+    ]
+  },
+  {
+    "name": "player_say",
+    "params": [
+      "userid",
+      "text"
+    ]
+  },
+  {
+    "name": "cs_round_start_beep",
+    "params": []
+  },
+  {
+    "name": "cs_round_final_beep",
+    "params": []
+  },
+  {
+    "name": "round_time_warning",
+    "params": []
+  }
+]

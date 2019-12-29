@@ -1,0 +1,38 @@
+[
+  {
+    "name": "knife",
+    "id": "0"
+  },
+  {
+    "name": "pistol",
+    "id": "1"
+  },
+  {
+    "name": "submachinegun",
+    "id": "2"
+  },
+  {
+    "name": "rifle",
+    "id": "3"
+  },
+  {
+    "name": "shotgun",
+    "id": "4"
+  },
+  {
+    "name": "sniper_rifle",
+    "id": "5"
+  },
+  {
+    "name": "machinegun",
+    "id": "6"
+  },
+  {
+    "name": "c4",
+    "id": "7"
+  },
+  {
+    "name": "grenade",
+    "id": "8"
+  }
+]
