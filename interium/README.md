@@ -14,3 +14,7 @@ Content:
 * [RainbowHUD.lua](RainbowHUD.lua): changes HUD color every `X` milliseconds.
 * [RemoveMenuBlur.lua](RemoveMenuBlur.lua): edited LUA for appearing or disappearing menu's blur.
 * [RighthandSwitcher.lua](RighthandSwitcher.lua): `cl_righthand` will automatically change when you choose knife.
+  
+Folders:
+* [json](json/README.md): JSON objects.
+* [rip](rip/README.md): LUA's that are probably dead.
