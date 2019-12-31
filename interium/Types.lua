@@ -109,6 +109,7 @@ _G.Color.__index = Color
 --- @param g number
 --- @param b number
 --- @param a number
+--- @return Color
 function Color:new(r, g, b, a)
   setmetatable({}, Color)
 
@@ -119,20 +120,48 @@ function Color:new(r, g, b, a)
 end
 
 
-_G.RECT = {}
-_G.RECT.__index = RECT
+_G.fRECT = {}
+_G.fRECT.__index = fRECT
 
 --- @param left number
 --- @param top number
 --- @param right number
 --- @param bottom number
-function RECT:new(left, top, right, bottom)
-  setmetatable({}, RECT)
+function fRECT:new(left, top, right, bottom)
+  setmetatable({}, fRECT)
 
   self.left = left
   self.top = top
   self.right = right
   self.bottom = bottom
+end
+
+
+_G.iRECT = {}
+_G.iRECT.__index = iRECT
+
+--- @param left number
+--- @param top number
+--- @param right number
+--- @param bottom number
+function iRECT:new(left, top, right, bottom)
+  setmetatable({}, iRECT)
+
+  self.left = left
+  self.top = top
+  self.right = right
+  self.bottom = bottom
+end
+
+
+_G.Vertex_t = {}
+_G.Vertex_t.__index = Vertex_t
+
+--- @param m_Position Vector2D
+--- @param m_TexCoord Vector2D
+function Vertex_t:new(m_Position, m_TexCoord)
+  self.m_Position = m_Position
+  self.m_TexCoord = m_TexCoord
 end
 
 
@@ -400,7 +429,7 @@ function CEntity:IsDormant() end
 --- @return model_t
 function CEntity:GetModel() end
 
---- @return RECT
+--- @return fRECT
 function CEntity:GetBox() end
 
 --- @return Vector
@@ -489,7 +518,7 @@ function CPlayer:IsDormant() end
 --- @return model_t
 function CPlayer:GetModel() end
 
---- @return RECT
+--- @return fRECT
 function CPlayer:GetBox() end
 
 --- @param hitbox_id number
@@ -702,7 +731,7 @@ function CWeapon:IsDormant() end
 --- @return model_t
 function CWeapon:GetModel() end
 
---- @return RECT
+--- @return fRECT
 function CWeapon:GetBox() end
 
 --- @return CWeaponInfo
@@ -808,7 +837,7 @@ function CPlantedC4:IsDormant() end
 --- @return model_t
 function CPlantedC4:GetModel() end
 
---- @return RECT
+--- @return fRECT
 function CPlantedC4:GetBox() end
 
 --- @return Vector
@@ -1166,7 +1195,7 @@ _G.Globals = {}
 function Globals.ScreenHeight() end
 
 --- @return number
-function Globals.ScreenWeight() end
+function Globals.ScreenWidth() end
 
 --- @return boolean
 function Globals.MenuOpened() end
@@ -1199,7 +1228,7 @@ function Globals.IsTrigger() end
 function Globals.IsCam() end
 
 --- @return boolean
-function Globals.IsThirdPerspon() end
+function Globals.IsThirdPerson() end
 
 --- @return boolean
 function Globals.IsJumpBug() end
@@ -1396,6 +1425,37 @@ function Render.Poly(points, points_count, color, closed, thickness) end
 --- @param points_count number
 --- @param color Color
 function Render.PolyFilled(points, points_count, color) end
+
+--- @param HackFontID number
+--- @param PathToFont string
+--- @param SizePixels number
+function Render.ChangeHackFont(HackFontID, PathToFont, SizePixels) end
+
+--- @param VarFontID number
+--- @param PathToFont string
+--- @param SizePixels number
+function Render.LoadFont(VarFontID, PathToFont, SizePixels) end
+
+--- @param VarFontID number
+--- @return boolean
+function Render.IsFont(VarFontID) end
+
+--- @param text string
+--- @param x number
+--- @param y number
+--- @param size number
+--- @param color Color
+--- @param center boolean
+--- @param outline boolean
+--- @param VarFontID number
+--- @return number
+function Render.Text(text, x, y, size, color, center, outline, VarFontID) end
+
+--- @param text string
+--- @param size number
+--- @param VarFontID number
+--- @return ImVec2
+function Render.CalcTextSize(text, size, VarFontID) end
 
 
 _G.Menu = {}
