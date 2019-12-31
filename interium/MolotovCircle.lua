@@ -15,8 +15,6 @@ Menu.ColorPicker("\"Fire\" text color", "cMolotovCircle__fire_color", 255, 0, 0,
 local Show = false
 local VectorEnd = nil
 
-local PlayerOrigin = nil
-
 local vOrigin_Offset = Hack.GetOffset("DT_BaseEntity", "m_vecOrigin")
 
 function InfernoStartburn(Event)
@@ -64,14 +62,14 @@ function PaintTraverse()
       true,            -- center
       true             -- outline
     )
-  
+
     Render.Circle3D(
       VectorEnd,
       100, -- points
       150, -- radius
       CircleColor
     )
-  
+
     Render.CircleFilled3D(
       VectorEnd,
       100, -- points

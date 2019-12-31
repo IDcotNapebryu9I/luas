@@ -129,7 +129,7 @@ function PlayerHurt(Event)
     if PlayerInfo.fakeplayer then
       name = "BOT " .. PlayerInfo.szName
     end
-    
+
     local MaxHits = Menu.GetInt("iHitLogger__max_hits")
 
     Hits[#Hits + 1] = {

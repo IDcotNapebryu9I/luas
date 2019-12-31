@@ -13,7 +13,7 @@ local Values = {
 
 function DoRepeat()
   if Utils.IsLocal() then
-    if Counter < GetTickCount() then     
+    if Counter < GetTickCount() then
       Value = Value + 1
 
       if Value > 6 then
@@ -23,7 +23,7 @@ function DoRepeat()
       ICvar.FindVar("cl_hud_color"):SetInt(Values[Value])
 
       Counter = GetTickCount() + Cooldown
-    end  
+    end
   end
 end
 

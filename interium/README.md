@@ -1,7 +1,7 @@
 # interium
 
-These LUA's are made for [Interium cheat](https://interium.ooo).
-IMO these LUA's are the best I've ever made.
+These LUAs are made for [Interium cheat](https://interium.ooo).
+IMO these LUAs are the best I've ever made.
 
 Content:
 * [AntiAFK.lua](AntiAFK.lua): now you won't be kicked from the game if you start AFK'ing.
@@ -19,4 +19,4 @@ Content:
   
 Folders:
 * [json](json/README.md): JSON objects.
-* [rip](rip/README.md): LUA's that are probably dead.
+* [rip](rip/README.md): LUAs that are probably dead.

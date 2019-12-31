@@ -15,8 +15,6 @@ Menu.Spacing()
 
 Menu.Button("Set kill message", "bSetKillmessage")
 
-local ColorPrint = ICvar.ConsoleColorPrintf
-
 local killmessage = Menu.GetString("sKillmessage")
 
 function PaintTraverse()

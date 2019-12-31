@@ -33,60 +33,12 @@ function UpdateScore()
     return
   end
 
-  local pLocal = IEntityList.GetPlayer(IEngine.GetLocalPlayer()) 
+  local pLocal = IEntityList.GetPlayer(IEngine.GetLocalPlayer())
   local pLocalResource = pLocal:GetPlayerResource()
 
   Kills = Menu.GetInt("iFakeScore__kills")
   Deaths = Menu.GetInt("iFakeScore__deaths")
   Assists = Menu.GetInt("iFakeScore__assists")
-
-  Print(
-    tostring(
-      pLocal
-    )
-  )
-
-  Print(
-    tostring(
-      pLocalResource
-    )
-  )
-
-  Print(
-    tostring(
-      m_iKills
-    )
-  )
-
-  Print(
-    tostring(
-      m_iDeaths
-    )
-  )
-
-  Print(
-    tostring(
-      m_iAssists
-    )
-  )
-
-  Print(
-    tostring(
-      Kills
-    )
-  )
-
-  Print(
-    tostring(
-      Deaths
-    )
-  )
-
-  Print(
-    tostring(
-      Assists
-    )
-  )
 
   pLocalResource:SetPropInt(m_iKills, Kills)
   pLocalResource:SetPropInt(m_iDeaths, Deaths)
@@ -118,7 +70,7 @@ local function HandleEvent(Event)
 
       UpdateScore()
     end
-  end 
+  end
 end
 
 Hack.RegisterCallback("FireEventClientSideThink", HandleEvent)

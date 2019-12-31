@@ -1,6 +1,6 @@
 # rip
 
-These LUA's are **probably dead and won't work anymore** cuz I'm too lazy to fix 'em.
+These LUAs are **probably dead and won't work anymore** cuz I'm too lazy to fix 'em.
 
 Content:
 * [FakeScore.lua](FakeScore.lua): this LUA was designed to set **fake** statistics in TAB.

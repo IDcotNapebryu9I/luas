@@ -89,7 +89,7 @@ function PaintTraverse()
       "\x08"  -- Gray
     }
 
-    local SkinColor = Colors[SkinColor + 1]
+    SkinColor = Colors[SkinColor + 1]
 
     Utils.SetName(" \n\x01\x10" .. Nickname .. " \x01has opened a container and found: " .. SkinColor .. "★ " .. SkinStatTrak .. SkinName .. " | " .. SkinDescription .. "\x01 " .. SkinTarget)
 

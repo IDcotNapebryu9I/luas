@@ -32,7 +32,7 @@ local white = Color.new(255, 255, 255, 255)
 -- Rainbow functions
 --   thanks to N1ceL
 local function AntiLag()
-	return (120.0 / Utils:GetFps());
+	return 120.0 / Utils:GetFps()
 end
 
 local function Rainbow(Type, r, g, b)
